@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "question": "Which keyword is used to define a function in Python?",
+    "options": [
+      "func",
+      "def",
+      "function",
+      "define"
+    ],
+    "answer": "def",
+    "explanation": "Python uses the def keyword to define a function."
+  },
+  {
+    "id": 2,
+    "question": "What is the correct way to print \"Hello, World!\" in Python?",
+    "options": [
+      "print \"Hello, World!\"",
+      "echo \"Hello, World!\"",
+      "print(\"Hello, World!\")",
+      "console.log(\"Hello, World!\")"
+    ],
+    "answer": "print(\"Hello, World!\")",
+    "explanation": "Python uses the built-in print() function, and strings are enclosed in quotes."
+  },
+  {
+    "id": 3,
+    "question": "Which data type is used to store a sequence of characters in Python?",
+    "options": [
+      "int",
+      "float",
+      "str",
+      "bool"
+    ],
+    "answer": "str",
+    "explanation": "The str (string) data type stores sequences of characters."
+  },
+  {
+    "id": 4,
+    "question": "What does the // operator do in Python?",
+    "options": [
+      "Performs modulo division",
+      "Performs floor division",
+      "Performs exponentiation",
+      "Compares two values"
+    ],
+    "answer": "Performs floor division",
+    "explanation": "The // operator performs floor division, returning the integer part of the quotient."
+  },
+  {
+    "id": 5,
+    "question": "Which keyword is used to create a loop that repeats a fixed number of times?",
+    "options": [
+      "while",
+      "for",
+      "repeat",
+      "loop"
+    ],
+    "answer": "for",
+    "explanation": "The for loop is typically used with range() to repeat code a fixed number of times; while is used for condition-based loops."
+  },
+  {
+    "id": 6,
+    "question": "How do you create a list in Python?",
+    "options": [
+      "list = (1, 2, 3)",
+      "list = {1, 2, 3}",
+      "list = [1, 2, 3]",
+      "list = <1, 2, 3>"
+    ],
+    "answer": "list = [1, 2, 3]",
+    "explanation": "Lists are created using square brackets []. Parentheses create tuples and curly braces create sets or dictionaries."
+  },
+  {
+    "id": 7,
+    "question": "Which of the following is NOT a valid Python variable name?",
+    "options": [
+      "my_variable",
+      "_private",
+      "2ndValue",
+      "totalScore"
+    ],
+    "answer": "2ndValue",
+    "explanation": "Python variable names cannot start with a digit; they must start with a letter or underscore."
+  },
+  {
+    "id": 8,
+    "question": "What is the output of type(3.14) in Python?",
+    "options": [
+      "<class 'int'>",
+      "<class 'float'>",
+      "<class 'str'>",
+      "<class 'decimal'>"
+    ],
+    "answer": "<class 'float'>",
+    "explanation": "Numbers with a decimal point are stored as the float data type."
+  },
+  {
+    "id": 9,
+    "question": "Which keyword is used to handle exceptions in Python?",
+    "options": [
+      "catch",
+      "except",
+      "error",
+      "handle"
+    ],
+    "answer": "except",
+    "explanation": "Python uses try/except blocks to catch and handle exceptions."
+  },
+  {
+    "id": 10,
+    "question": "How do you write a single-line comment in Python?",
+    "options": [
+      "// This is a comment",
+      "<!-- This is a comment -->",
+      "# This is a comment",
+      "-- This is a comment"
+    ],
+    "answer": "# This is a comment",
+    "explanation": "Python uses the # symbol to start a single-line comment."
+  }
+]

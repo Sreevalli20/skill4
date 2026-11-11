@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Python Quiz &amp; Assessment App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app-container">
+
+    <!-- ============ START SCREEN ============ -->
+    <section id="start-screen" class="screen active">
+      <div class="card start-card">
+        <div class="badge">Python Programming Basics</div>
+        <h1>Quiz &amp; Assessment App</h1>
+        <p class="subtitle">
+          Test your knowledge of Python fundamentals with a set of
+          multiple-choice questions. Answer carefully, review your results,
+          and try again to improve your score.
+        </p>
+        <div class="quiz-meta">
+          <div class="meta-item"><span class="meta-value" id="total-questions">-</span><span class="meta-label">Questions</span></div>
+          <div class="meta-item"><span class="meta-value">10</span><span class="meta-label">Max Score</span></div>
+          <div class="meta-item"><span class="meta-value">MCQ</span><span class="meta-label">Format</span></div>
+        </div>
+        <button id="start-btn" class="btn btn-primary btn-large">Start Quiz</button>
+        <p id="load-error" class="error-text hidden"></p>
+      </div>
+    </section>
+
+    <!-- ============ QUIZ SCREEN ============ -->
+    <section id="quiz-screen" class="screen">
+      <div class="card quiz-card">
+        <div class="quiz-header">
+          <div class="progress-wrap">
+            <div class="progress-info">
+              <span id="question-counter">Question 1 of -</span>
+              <span id="answered-count">0 answered</span>
+            </div>
+            <div class="progress-bar">
+              <div id="progress-fill" class="progress-fill"></div>
+            </div>
+          </div>
+        </div>
+
+        <h2 id="question-text" class="question-text"></h2>
+        <div id="options-container" class="options-container"></div>
+
+        <div class="nav-buttons">
+          <button id="prev-btn" class="btn btn-secondary">Previous</button>
+          <button id="next-btn" class="btn btn-secondary">Next</button>
+          <button id="submit-btn" class="btn btn-primary">Submit Quiz</button>
+        </div>
+        <p id="quiz-error" class="error-text hidden"></p>
+      </div>
+    </section>
+
+    <!-- ============ RESULT SCREEN ============ -->
+    <section id="result-screen" class="screen">
+      <div class="card result-card">
+        <h2>Your Results</h2>
+        <div class="score-circle">
+          <span id="score-value">0/10</span>
+          <span id="score-percent">0%</span>
+        </div>
+        <p id="feedback-text" class="feedback"></p>
+
+        <div class="stats-grid">
+          <div class="stat"><span id="stat-correct" class="stat-num correct">0</span><span class="stat-label">Correct</span></div>
+          <div class="stat"><span id="stat-incorrect" class="stat-num incorrect">0</span><span class="stat-label">Incorrect</span></div>
+          <div class="stat"><span id="stat-unanswered" class="stat-num unanswered">0</span><span class="stat-label">Unanswered</span></div>
+        </div>
+
+        <div class="result-actions">
+          <button id="review-btn" class="btn btn-secondary">Review Answers</button>
+          <button id="retry-btn" class="btn btn-primary">Retry Quiz</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ REVIEW SCREEN ============ -->
+    <section id="review-screen" class="screen">
+      <div class="card review-card">
+        <h2>Answer Review</h2>
+        <div id="review-list" class="review-list"></div>
+        <div class="result-actions">
+          <button id="review-retry-btn" class="btn btn-primary">Retry Quiz</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
